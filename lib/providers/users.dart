@@ -68,7 +68,7 @@ class Users with ChangeNotifier {
   }
 
   Future<bool> logInWithStoredToken() async {
-    print("$IP");
+    print("Testing $IP");
     try {
       var sharedPreferences = await SharedPreferences.getInstance();
       if (!sharedPreferences.containsKey("accessToken")) return false;
